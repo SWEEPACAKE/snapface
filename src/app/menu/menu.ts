@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 // Import du modèle de MenuItem
 import { MenuItem } from '../models/menu-item-model';
+
+// Import des composants custom
+import { Logo } from '../logo/logo';
+
 @Component({
   selector: 'app-menu',
-  imports: [],
+  imports: [Logo],
   templateUrl: './menu.html',
   styleUrl: './menu.scss',
 })

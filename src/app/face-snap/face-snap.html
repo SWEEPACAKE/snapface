@@ -5,7 +5,7 @@
     </div>
     <div class="faceSnapBody">
         <p>{{ faceSnap.description }}</p>
-        <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title"/>
+        <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" class="img-fluid"/>
         <p>
             🤌 {{ faceSnap.snaps }}
             <button (click)="onAddSnap()">Je snap, stylé le boug</button>

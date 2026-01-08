@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="row">
+        @for(monFaceSnap of maListe; track monFaceSnap.title) {
+            <div class="col-12 col-md-6">
+                <app-face-snap [faceSnap]="monFaceSnap"></app-face-snap>
+            </div>
+        }
+    </div>
+</div>

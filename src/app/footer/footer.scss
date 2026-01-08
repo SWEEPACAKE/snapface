@@ -1,7 +1,9 @@
 footer {
-    background-color: #8b8b8b;
+    background-color: #f1f1f1;
     padding: 25px 15px;
-    img {
-        filter: grayscale(100%);
+    .logo-footer::ng-deep {
+        img {
+            filter: grayscale(100%);
+        }
     }
 }
