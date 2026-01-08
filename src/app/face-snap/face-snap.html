@@ -1,0 +1,14 @@
+<div class="containerFaceSnap">
+    <div class="faceSnapHeader">
+        <h2>{{ faceSnap.title }}</h2>
+        <span>Mis en ligne le {{ faceSnap.createdAt }}</span>
+    </div>
+    <div class="faceSnapBody">
+        <p>{{ faceSnap.description }}</p>
+        <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title"/>
+        <p>
+            🤌 {{ faceSnap.snaps }}
+            <button (click)="onAddSnap()">Je snap, stylé le boug</button>
+        </p>
+    </div>
+</div>

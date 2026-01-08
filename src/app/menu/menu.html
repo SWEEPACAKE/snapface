@@ -1,0 +1,14 @@
+<nav class="shadow-sm">
+    <ul class="navbar list-unstyled d-flex justify-content-start">
+        <li>
+            <img src="appareil-photo.png"/>
+        </li>
+        @for(menuItem of tableauLiens; track menuItem.id) {
+            <li class="nav-item">
+                <a [href]="menuItem.lien" class="nav-link mx-4">
+                    {{ menuItem.libelle }}
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

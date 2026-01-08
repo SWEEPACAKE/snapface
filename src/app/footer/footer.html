@@ -1,0 +1,31 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <ul class="list-unstyled">
+                    @for(menuItem of tableauLiens1; track menuItem.id) {
+                        <li>
+                            <a [href]="menuItem.lien" class="nav-link">
+                                {{ menuItem.libelle }}
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <img src="appareil-photo.png" class="logo-footer"/>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul class="list-unstyled">
+                    @for(menuItem of tableauLiens2; track menuItem.id) {
+                        <li>
+                            <a [href]="menuItem.lien" class="nav-link text-end">
+                                {{ menuItem.libelle }}
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
