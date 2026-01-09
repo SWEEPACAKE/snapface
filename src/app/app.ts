@@ -3,12 +3,13 @@ import { Component, OnInit, signal } from '@angular/core';
 // Modèles 
 import { FaceSnapModel } from './models/face-snap-model';
 // Composants Custom
-import { Menu } from './menu/menu';
-import { Liste } from './liste/liste';
-import { Footer } from './footer/footer';
+import { Menu } from './components/menu/menu';
+import { Liste } from './components/liste/liste';
+import { ListeRandonnee } from './components/liste-randonnee/liste-randonnee';
+import { Footer } from './components/footer/footer';
 @Component({
   selector: 'app-root',
-  imports: [Menu, Liste, Footer],
+  imports: [Menu, Liste, ListeRandonnee, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

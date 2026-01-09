@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Import du modèle
-import { MenuItem } from '../models/menu-item-model';
+import { MenuItem } from '../../models/menu-item-model';
 
 // Import des composants Custom
 import { Logo } from '../logo/logo';

@@ -1,7 +1,7 @@
 <div class="containerFaceSnap">
     <div class="faceSnapHeader">
         <h2>{{ faceSnap.title }}</h2>
-        <span>Mis en ligne le {{ faceSnap.createdAt }}</span>
+        <span>Mis en ligne le {{ faceSnap.createdAt | date: 'dd/MM/yyyy' }}</span>
     </div>
     <div class="faceSnapBody">
         <p>{{ faceSnap.description }}</p>

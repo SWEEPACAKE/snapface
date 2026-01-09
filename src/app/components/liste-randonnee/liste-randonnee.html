@@ -1,0 +1,30 @@
+<div class="container mt-5 py-4">
+    <h2 class="mt-5 mb-4 text-center">Les plus belles randos de la région</h2>
+    <div class="row">
+        <!-- On prend un objet du tableau "maListe" et on le nomme "rando" -->
+        @for(rando of maListe; track rando.id) {
+            <!-- Vu que le tableau maListe contient des objets de la classe RandonneeModel -->
+            <!-- J'ai accès dans la boucle aux propriétés de la classe RandonneeModel -->
+            <div class="col-12 col-md-4">
+                <div class="card p-4 h-100 d-flex flex-column justify-content-between">
+                    <div class="head">
+                        <h3>{{ rando.nom }}</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p>Distance : <span>{{ rando.distance }}km</span></p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Dénivelé : <span>{{ rando.denivele }}m</span></p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Difficulté : <span>{{ rando.difficulte }}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>{{ rando.description }}</p>
+                    <img class="img-fluid" [src]="rando.photoUrl"/>
+                </div>
+            </div>
+        }
+    </div>
+</div>

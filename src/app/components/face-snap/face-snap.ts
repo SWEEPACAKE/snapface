@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { FaceSnapModel } from '../models/face-snap-model';
+import { DatePipe } from '@angular/common';
+import { FaceSnapModel } from '../../models/face-snap-model';
 @Component({
   selector: 'app-face-snap',
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './face-snap.html',
   styleUrl: './face-snap.scss',
 })
